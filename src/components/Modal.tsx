@@ -24,8 +24,7 @@ const Modal = ( props: Props ) => {
                     <div className="flex flex-row space-apart">
                         <p className="flex justify-center m-2 bg-slate-100 p-3 rounded hover:bg-slate-900 text-black hover:text-white"
                         onClick={props.onClose}>
-                            <i className="fa-sharp fa-regular fa-circle-xmark fa-lg"></i>
-                            
+                            <i className="fa-sharp fa-regular fa-circle-xmark fa-lg"></i>   
                         </p>
                     </div>
                     <div className="flex flex-col items-center text-center m-3 p-2">

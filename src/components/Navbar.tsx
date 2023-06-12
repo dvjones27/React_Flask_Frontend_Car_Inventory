@@ -44,8 +44,8 @@ const clicked = () => {
         
         <Button 
         onClick={dropDown}
-        className="flex  items-center px-3 py-2 text-white-700 border rounded border-white-300 hover:text-white hover:border-red">
-            <i className="fa-regular fa-car text-white" ></i>
+        className="flex  items-center px-3 py-2 text-semibold text-white-700 border rounded bg-gray-400 border-white-300 text-gray-900 hover:font-bold hover:text-red hover:border-red">
+            <i className="fa-regular fa-car" ></i>
         </Button>
         
     </div>

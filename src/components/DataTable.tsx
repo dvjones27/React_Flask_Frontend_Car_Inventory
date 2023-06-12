@@ -57,13 +57,13 @@ function DataTable() {
             <Button onClick={deleteData} className="p-3 bg-slate-300 m-3 rounded hover:bg-slate-500 hover:text-white" >Delete</Button>
         </div>
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
-          style={{ height: 500, width: '75%' }}
+          style={{ height: 500, width: '95%' }}
           >
             <h2 className="flex p-3 bg-slate-300 justify-items-center items-center h-auto w-auto  my-2 rounded">My Cars</h2>
             <DataGrid 
               autoHeight {...carData}
               rows={carData} 
-              columns={columns}  
+              columns={columns}
               checkboxSelection={true}
               getRowId={(row) => row.id + row.vin}
               onRowSelectionModelChange={ (item:any) => {setSelectionModel(item)

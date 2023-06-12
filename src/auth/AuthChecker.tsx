@@ -7,18 +7,6 @@ interface Props {
     children: React.ReactNode;
 }
 
-// createUserWithEmailAndPassword() {
-//   firebase
-//     .auth()
-//     .createUserWithEmailAndPassword(this.email, this.password)
-//     .then((user) => {
-//       console.log(user);
-//     })
-//     .catch((error) => {
-//       console.log('Error signing user up with email and password! ' 
-//       +  error.code + ': ' + error.message);
-//     });
-// }
 
 const AuthChecker = ({ children}: Props) => {
   const navigate = useNavigate();

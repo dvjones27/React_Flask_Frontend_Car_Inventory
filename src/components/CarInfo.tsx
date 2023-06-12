@@ -21,7 +21,7 @@ const CarInfo = (props: CarInfoProps) => {
     console.log(data)
     if (props.id && props.id.length > 0) {
       server_calls.update(props.id[0], data)
-      console.log(`Updated: ${data.vin} ${props.id}`)
+      console.log(`Updated: ${ data.vin } ${ props.id }`)
       setTimeout(() => { window.location.reload() }, 100000);
       event.target.reset()
     } else {
@@ -40,23 +40,23 @@ const CarInfo = (props: CarInfoProps) => {
       <form onSubmit={handleSubmit(onSubmit)} >
         <div>
           <label htmlFor="vin">VIN</label>
-          <Input {...register('vin')} type="text" pattern="^[a-zA-Z0-9]+$" name='vin' placeholder="VIN" />
+          <Input {...register("vin")} type="text" pattern="^[a-zA-Z0-9]+$" name="vin" placeholder="VIN" />
         </div>
         <div>
           <label htmlFor="make">Make</label>
-          <Input {...register('make')} type="text" pattern="^[a-zA-Z]+$" name='make' placeholder="Make" />
+          <Input {...register("make")} type="text" pattern="^[a-zA-Z]+$" name="make" placeholder="Make" />
         </div>
         <div>
           <label htmlFor="model">Model</label>
-          <Input {...register('model')} type="text" pattern="^[a-zA-Z0-9]+$" name='model' placeholder="Model" />
+          <Input {...register("model")} type="text" pattern="^[a-zA-Z0-9]+$" name="model" placeholder="Model" />
         </div>
         <div>
           <label htmlFor="year">Year</label>
-          <Input {...register('year')} type="number" pattern="[0-9]*" name='year' placeholder="Year" />
+          <Input {...register("year")} type="number" pattern="[0-9]*" name="year" placeholder="Year" />
         </div>
         <div>
           <label htmlFor="color">Color</label>
-          <Input {...register('color')} type="text" pattern="^[a-zA-Z]+$" name='color' placeholder="Color" />
+          <Input {...register("color")} type="text" pattern="^[a-zA-Z]+$" name="color" placeholder="Color" />
         </div>
         <div className="flex p-1">
           <Button
